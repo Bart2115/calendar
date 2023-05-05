@@ -1,0 +1,24 @@
+.disable{
+    background-color: #999;
+}
+
+.disable:hover{
+    background-color: #999;
+}
+
+div:hover{
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+.today{
+    background-color: #ece;
+}
+
+.today:hover{
+    background-color: #fcf;
+}
+
+.selected{
+    border: 2px solid red;
+}

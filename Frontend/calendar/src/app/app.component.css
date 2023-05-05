@@ -1,0 +1,18 @@
+.container{
+    overflow: hidden;
+    display: flex;
+}
+
+app-calendar{
+    width: 70%;
+}
+
+app-event{
+    width: 30%;
+    display: flex;
+}
+
+app-main-menu{
+    height: 100px;
+    display: flex;
+}

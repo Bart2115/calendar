@@ -1,0 +1,19 @@
+div{
+    background-color: #eee;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 40px;
+    padding: 5px 10px 5px 10px;
+}
+
+p{
+    margin: auto 0 auto 0;
+}
+
+img:active{
+    width: 45px;
+}

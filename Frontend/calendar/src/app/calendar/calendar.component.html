@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="day" *ngFor="let day of daysShortcuts">
+        <span>{{day}}</span>
+    </div>
+</div>
+<div class="container">
+    <app-day class="day dayOfMonth" *ngFor="let day of monthWeeks.firstWeek" [id]="day" [isSelected]="selectedDate == day"></app-day>
+</div>
+<div class="container">
+    <app-day class="day dayOfMonth" *ngFor="let day of monthWeeks.secondWeek" [id]="day" [isSelected]="selectedDate == day"></app-day>
+</div>
+<div class="container">
+    <app-day class="day dayOfMonth" *ngFor="let day of monthWeeks.thirdWeek" [id]="day" [isSelected]="selectedDate == day"></app-day>
+</div>
+<div class="container">
+    <app-day class="day dayOfMonth" *ngFor="let day of monthWeeks.fourthWeek" [id]="day" [isSelected]="selectedDate == day"></app-day>
+</div>
+<div class="container">
+    <app-day class="day dayOfMonth" *ngFor="let day of monthWeeks.fifthWeek" [id]="day" [isSelected]="selectedDate == day"></app-day>
+</div>
+<div class="container">
+    <app-day class="day dayOfMonth" *ngFor="let day of monthWeeks.sixthWeek" [id]="day" [isSelected]="selectedDate == day"></app-day>
+</div>

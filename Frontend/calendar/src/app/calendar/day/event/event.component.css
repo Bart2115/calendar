@@ -1,0 +1,12 @@
+.event{
+    width: 80%;
+    height: 20%;
+    margin: 25px auto 0 auto;
+    background-color: #eee;
+    text-align: center;
+}
+
+.eventContainer{
+    width: 100%;
+    background-color: #999;
+}

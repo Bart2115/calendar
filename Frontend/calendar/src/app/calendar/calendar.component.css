@@ -1,0 +1,22 @@
+.day{
+    width: 13.5%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #999;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.dayOfMonth{
+    font-weight: normal;
+    line-height: 100px;
+    height: 100px;
+    background-color: #eee;
+}
+
+.container{
+    overflow: hidden;
+    background-color: #999;
+}
