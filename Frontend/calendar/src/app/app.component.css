@@ -7,7 +7,7 @@ app-calendar{
     width: 70%;
 }
 
-app-event{
+app-note{
     width: 30%;
     display: flex;
 }

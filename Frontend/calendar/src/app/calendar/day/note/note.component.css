@@ -1,4 +1,4 @@
-.event{
+.note{
     width: 80%;
     height: 20%;
     margin: 25px auto 0 auto;
@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.eventContainer{
+.noteContainer{
     width: 100%;
     background-color: #999;
 }

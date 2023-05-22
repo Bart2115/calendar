@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { DayComponent } from './calendar/day/day.component';
-import { EventComponent } from './calendar/day/event/event.component';
+import { NoteComponent } from './calendar/day/note/note.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +14,11 @@ import { EventComponent } from './calendar/day/event/event.component';
     MainMenuComponent,
     CalendarComponent,
     DayComponent,
-    EventComponent
+    NoteComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -20,7 +20,7 @@ export class CalendarComponent implements OnDestroy{
       .subscribe( () =>
         this.monthWeeks = dateService.setCalendar()
     );
-    dateService.eventDayMessage$.pipe(takeUntil(this.destroyed$))
+    dateService.noteDayMessage$.pipe(takeUntil(this.destroyed$))
       .subscribe( message =>
         this.selectedDate = message
     );

@@ -24,7 +24,7 @@ export class DayComponent implements OnChanges{
     if(today == this.id) this.isToday = true;
   }
 
-  showEvent(){
-    this.dateService.sendEventDayMessage(this.id);
+  showNote(){
+    this.dateService.sendNoteDayMessage(this.id);
   }
 }

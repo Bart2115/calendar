@@ -10,23 +10,23 @@ export class DateService implements OnDestroy{
   currentDate = new Date();
   todayDate = new Date();
   lastSelectedDate = "";
-  eventDayMessage$ = new Subject<string>();
+  noteDayMessage$ = new Subject<string>();
 
   ngOnDestroy(){
     this.selectedDateToShow$.complete();
-    this.eventDayMessage$.complete();
+    this.noteDayMessage$.complete();
   }
 
   sendPreviousDate(){
     this.currentDate.setMonth(this.currentDate.getMonth() - 1);
     this.selectedDateToShow$.next(this.currentDate);
-    if(this.lastSelectedDate) this.eventDayMessage$.next(this.lastSelectedDate);
+    if(this.lastSelectedDate) this.noteDayMessage$.next(this.lastSelectedDate);
   }
 
   sendNextDate(){
     this.currentDate.setMonth(this.currentDate.getMonth() + 1);
     this.selectedDateToShow$.next(this.currentDate);
-    if(this.lastSelectedDate) this.eventDayMessage$.next(this.lastSelectedDate);
+    if(this.lastSelectedDate) this.noteDayMessage$.next(this.lastSelectedDate);
   }
 
   getShowDate(){
@@ -71,8 +71,8 @@ export class DateService implements OnDestroy{
     return date.toLocaleDateString(undefined, {year: 'numeric', month: '2-digit', day: '2-digit'});
   }
 
-  sendEventDayMessage(message: string){
-    this.eventDayMessage$.next(message);
+  sendNoteDayMessage(message: string){
+    this.noteDayMessage$.next(message);
     this.lastSelectedDate = message;
   }
 }
