@@ -1,9 +1,9 @@
-import { Injectable, OnDestroy } from "@angular/core";
+import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import { NoteInfo } from "../models/note-info.model";
 
 @Injectable({ providedIn: 'root' })
-export class NoteService implements OnDestroy{
+export class NoteService{
     private backendUrl = "https://localhost:5001/api/Notes";
 
     constructor(private httpClient: HttpClient){}
@@ -12,7 +12,4 @@ export class NoteService implements OnDestroy{
         return this.httpClient.get<NoteInfo[]>(this.backendUrl + `?noteDate=${date}`);
     }
 
-    ngOnDestroy(): void {
-        throw new Error("Method not implemented.");
-    }
 }
